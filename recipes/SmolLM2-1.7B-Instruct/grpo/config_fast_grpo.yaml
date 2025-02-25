@@ -4,7 +4,7 @@ model_revision: main
 torch_dtype: bfloat16
 attn_implementation: flash_attention_2
 # Data training arguments
-dataset_name: open-r1/OpenR1-Math-cn_k12-86k
+dataset_name: DigitalLearningGmbH/MATH-lighteval
 dataset_configs:
 - all
 dataset_train_split: train
@@ -48,7 +48,7 @@ use_liger_kernel: true
 
 report_to:
 - wandb
-wandb_entity: huggingface 
+wandb_entity: silxlabsdev-silx
 wandb_project: open-r1
 log_completions: true
 seed: 42

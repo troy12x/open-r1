@@ -128,11 +128,11 @@ class FastGRPOConfig(trl.GRPOConfig):
     overwrite_hub_revision: bool = field(default=False, metadata={"help": "Whether to overwrite the Hub revision."})
     push_to_hub_revision: bool = field(default=False, metadata={"help": "Whether to push to a Hub revision/branch."})
     wandb_entity: Optional[str] = field(
-        default=None,
+        default="silxlabsdev-silx",
         metadata={"help": ("The entity to store runs under.")},
     )
     wandb_project: Optional[str] = field(
-        default=None,
+        default="open-r1",
         metadata={"help": ("The project to store runs under.")},
     )
     remote_gen_model_url: str = field(
