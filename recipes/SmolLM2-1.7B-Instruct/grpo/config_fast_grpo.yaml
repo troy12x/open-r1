@@ -14,7 +14,7 @@ ddp_find_unused_parameters: false
 bf16: true
 do_eval: false
 eval_strategy: "no"
-gradient_accumulation_steps: 64
+gradient_accumulation_steps: 8
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
@@ -30,7 +30,7 @@ max_prompt_length: 1024
 max_completion_length: 7168
 max_steps: -1
 num_train_epochs: 0.5
-num_generations: 16
+num_generations: 2
 output_dir: data/open-r1/SmolLM2-1.7B-Instruct-FGRPO-v05.00
 overwrite_output_dir: true
 per_device_eval_batch_size: 4

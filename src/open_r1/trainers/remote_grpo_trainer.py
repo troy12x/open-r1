@@ -145,7 +145,7 @@ class RemoteGRPOConfig(trl.GRPOConfig):
         metadata={"help": ("The project to store runs under.")},
     )
     remote_gen_model_url: str = field(
-        default="10.19.109.58 ",
+        default="127.0.0.1",
     )
     remote_gen_model_port: str = field(
         default="30010",
