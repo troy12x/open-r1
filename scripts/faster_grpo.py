@@ -82,7 +82,7 @@ class GRPOScriptArguments(ScriptArguments):
         metadata={"help": "Maximum reward for correct answers"},
     )
     cosine_max_len: int = field(
-        default=1000,
+        default=8129,
         metadata={"help": "Maximum length for scaling"},
     )
 
@@ -96,10 +96,7 @@ class GRPOScriptArguments(ScriptArguments):
     )
     
 SYSTEM_PROMPT = (
-    "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
-    "first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning "
-    "process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., "
-    "<think> reasoning process here </think><answer> answer here </answer>"
+   "You are Quasar-1, an advanced creation by SILX AI. You are a helpful AI Assistant that provides well-reasoned and detailed responses involves thoroughly exploring questions through a systematic long thinking process before providing the final precise . to reach the conclusion, formatted as follows:  <|begin_of_thought|>{Your detailed thinking process here}<|end_of_thought|> <|begin_of_solution|> {final formatted, precise, and clear solution} <|end_of_solution|>"
 )
 
 
