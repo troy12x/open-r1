@@ -1,11 +1,11 @@
 # Model arguments
-model_name_or_path: Qwen/Qwen2.5-1.5B-Instruct
+model_name_or_path: silx-ai/Quasar-ant
 model_revision: main
 torch_dtype: bfloat16
 attn_implementation: flash_attention_2
 
 # Data training arguments
-dataset_name: open-r1/OpenR1-Math-220k
+dataset_name: eyad-silx/r1-quasar
 dataset_num_proc: 48
 
 # SFT trainer config
@@ -16,11 +16,11 @@ gradient_accumulation_steps: 1
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
-hub_model_id: Qwen2.5-1.5B-Open-R1-Distill
+hub_model_id: eyad-silx/Quasar-final
 hub_strategy: every_save
 learning_rate: 5.0e-05
 log_level: info
-logging_steps: 5
+logging_steps: 2
 logging_strategy: steps
 lr_scheduler_type: cosine_with_min_lr
 lr_scheduler_kwargs:
@@ -37,7 +37,7 @@ push_to_hub: true
 report_to:
 - wandb
 save_strategy: "steps"
-save_steps: 100
+save_steps: 150
 save_total_limit: 1
 seed: 42
 use_liger: true
