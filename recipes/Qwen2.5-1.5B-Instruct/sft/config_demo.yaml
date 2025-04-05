@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: silx-ai/Quasar-ant
+model_name_or_path: qihoo360/Light-R1-7B-DS
 model_revision: main
 torch_dtype: bfloat16
 attn_implementation: flash_attention_2
@@ -17,7 +17,7 @@ gradient_accumulation_steps: 1
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
-hub_model_id: eyad-silx/Quasar-final
+hub_model_id: eyad-silx/Quasar-final2
 hub_strategy: every_save
 learning_rate: 5.0e-05
 log_level: info
@@ -27,7 +27,7 @@ lr_scheduler_type: cosine_with_min_lr
 lr_scheduler_kwargs:
   min_lr_rate: 0.1
 packing: true
-max_length: 16384
+max_length: 26384
 max_steps: -1
 num_train_epochs: 1
 output_dir: data/Qwen2.5-1.5B-Open-R1-Distill
