@@ -19,7 +19,7 @@ gradient_checkpointing_kwargs:
   use_reentrant: false
 hub_model_id: silx-ai/Quasar-3.0-Final-2
 hub_strategy: every_save
-learning_rate: 5.0e-05
+learning_rate: 2.0e-05
 log_level: info
 logging_steps: 2
 logging_strategy: steps
