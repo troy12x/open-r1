@@ -29,7 +29,7 @@ lr_scheduler_kwargs:
 packing: true
 max_length: 26384
 max_steps: -1
-num_train_epochs: 1
+num_train_epochs: 3
 output_dir: data/Qwen2.5-1.5B-Open-R1-Distill
 overwrite_output_dir: true
 per_device_eval_batch_size: 16
