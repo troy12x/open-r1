@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: silx-ai/Quasar-3.0-Final-2
+model_name_or_path: silx-ai/Quasar-3.0-Final
 model_revision: main
 torch_dtype: bfloat16
 attn_implementation: flash_attention_2
@@ -17,7 +17,7 @@ gradient_accumulation_steps: 8
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
-hub_model_id: silx-ai/Quasar-3.0-Instract
+hub_model_id: silx-ai/Quasar-3.0-Instract-v2
 hub_strategy: every_save
 learning_rate: 1.0e-05
 log_level: info
